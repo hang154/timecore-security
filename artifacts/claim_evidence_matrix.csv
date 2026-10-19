@@ -1,0 +1,5 @@
+claim,evidence,evidence_hash,level
+P02 source baseline identity trust,artifacts/verification-v2.json (P02-03/05/06),24814a8f58af8bcfda6f6a539fc97b6e6229765f01699564d3fd8616ac50e4c1,E2 synthetic
+P02 example fix retest,artifacts/verification-v2.json (BA-01..04),24814a8f58af8bcfda6f6a539fc97b6e6229765f01699564d3fd8616ac50e4c1,E4 synthetic
+P04 anonymous payment read/key conflict,artifacts/verification-v2.json (P04-10/12/13),24814a8f58af8bcfda6f6a539fc97b6e6229765f01699564d3fd8616ac50e4c1,E2 synthetic
+P04 object ownership/key scoping retest,artifacts/verification-v2.json (BA-05..07),24814a8f58af8bcfda6f6a539fc97b6e6229765f01699564d3fd8616ac50e4c1,E4 synthetic

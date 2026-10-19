@@ -1,0 +1,475 @@
+{
+  "version": 2,
+  "checked_at_utc": "2026-10-19T05:29:06.135545+00:00",
+  "kind": "isolated-synthetic-http-replay",
+  "before_source_sha256": "375c0a4e94cf669489ebfff320e505afde826f6ac1546348010cc7d3a52503d5",
+  "original_before_reference": "hang154/whitehat-workspace@5194860 runtime/sandbox.py",
+  "live_8420_touched": false,
+  "all_passed": true,
+  "suite_counts": {
+    "p02_before": {
+      "total": 13,
+      "passed": 13,
+      "failed": 0
+    },
+    "p04_before": {
+      "total": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    "before_after": {
+      "total": 20,
+      "passed": 20,
+      "failed": 0
+    }
+  },
+  "cases": {
+    "p02_before": [
+      {
+        "id": "P02-01-alpha",
+        "expected": 200,
+        "observed": 200,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P02-01-beta",
+        "expected": 200,
+        "observed": 200,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P02-01-gamma",
+        "expected": 200,
+        "observed": 200,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P02-02-cross",
+        "expected": 403,
+        "observed": 403,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P02-03-claim",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P02-04-mismatch",
+        "expected": 403,
+        "observed": 403,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P02-05-admin",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P02-06-owner",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P02-07-no-headers",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P02-08-only-role",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P02-09-unknown-tenant",
+        "expected": 404,
+        "observed": 404,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P02-10-unknown-role",
+        "expected": 403,
+        "observed": 403,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P02-11-role-no-diff",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      }
+    ],
+    "p04_before": [
+      {
+        "id": "P04-01-valid",
+        "expected": 200,
+        "observed": 200,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P04-02-zero",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P04-03-negative",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P04-04-too-big",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P04-05-string",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P04-06-bool",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P04-07-float",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P04-08-currency",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P04-09-no-key",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P04-10-anon-read",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P04-11-oracle",
+        "expected": 404,
+        "observed": 404,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P04-12-squat",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P04-13-squat-owner",
+        "expected": 409,
+        "observed": 409,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P04-14-residual",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P04-15-squat-assert",
+        "expected": 200,
+        "observed": 200,
+        "category": "VULNERABILITY_REPRODUCED",
+        "pass": true
+      },
+      {
+        "id": "P04-16-owner-newkey",
+        "expected": 200,
+        "observed": 200,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P04-17-idempotent-retry",
+        "expected": 200,
+        "observed": 200,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "P04-18-concurrent",
+        "expected": [
+          200,
+          409
+        ],
+        "observed": [
+          200,
+          409
+        ],
+        "category": "CONTROL",
+        "pass": true
+      }
+    ],
+    "before_after": [
+      {
+        "id": "SEC-00-alice-token",
+        "expected": 200,
+        "observed": 200,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-01-bob-token",
+        "expected": 200,
+        "observed": 200,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-02-owner-token",
+        "expected": 200,
+        "observed": 200,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-03-no-password-impersonation",
+        "expected": 401,
+        "observed": 401,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-04-unknown-account",
+        "expected": 401,
+        "observed": 401,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "BA-01",
+        "expected": {
+          "before": 200,
+          "after": 200,
+          "same_body": true
+        },
+        "observed": {
+          "before": 200,
+          "after": 200,
+          "same_body": true
+        },
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "BA-02",
+        "expected": 401,
+        "observed": 401,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "BA-03",
+        "expected": 403,
+        "observed": 403,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "BA-04",
+        "expected": {
+          "member_claiming_owner": 403,
+          "real_owner_claiming_viewer": 200
+        },
+        "observed": {
+          "member_claiming_owner": 403,
+          "real_owner_claiming_viewer": 200
+        },
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "BA-05",
+        "expected": {
+          "before_created": 200,
+          "before_anon": 200,
+          "after_created": 200,
+          "after_anon": 401,
+          "after_owner": 200,
+          "after_other_user": 404,
+          "owner_amount": 500000
+        },
+        "observed": {
+          "before_created": 200,
+          "before_anon": 200,
+          "after_created": 200,
+          "after_anon": 401,
+          "after_owner": 200,
+          "after_other_user": 404,
+          "owner_amount": 500000
+        },
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "BA-06",
+        "expected": {
+          "before": [
+            200,
+            409,
+            200,
+            1
+          ],
+          "after": [
+            200,
+            200,
+            200,
+            500000
+          ]
+        },
+        "observed": {
+          "before": [
+            200,
+            409,
+            200,
+            1
+          ],
+          "after": [
+            200,
+            200,
+            200,
+            500000
+          ]
+        },
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "BA-07",
+        "expected": [
+          200,
+          422
+        ],
+        "observed": [
+          200,
+          422
+        ],
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-input-string",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-input-bool",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-input-float",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-input-negative",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-input-zero",
+        "expected": 422,
+        "observed": 422,
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-idempotent-same-principal",
+        "expected": {
+          "first": 200,
+          "retry": 200,
+          "different": 409,
+          "equal_body": true
+        },
+        "observed": {
+          "first": 200,
+          "retry": 200,
+          "different": 409,
+          "equal_body": true
+        },
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-concurrent-same-principal",
+        "expected": [
+          200,
+          409
+        ],
+        "observed": [
+          200,
+          409
+        ],
+        "category": "CONTROL",
+        "pass": true
+      },
+      {
+        "id": "SEC-invalid-token",
+        "expected": 401,
+        "observed": 401,
+        "category": "CONTROL",
+        "pass": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+case_id,category,expected,observed,pass
+SEC-00-alice-token,CONTROL,200,200,yes
+SEC-01-bob-token,CONTROL,200,200,yes
+SEC-02-owner-token,CONTROL,200,200,yes
+SEC-03-no-password-impersonation,CONTROL,401,401,yes
+SEC-04-unknown-account,CONTROL,401,401,yes
+BA-01,CONTROL,"{""before"": 200, ""after"": 200, ""same_body"": true}","{""before"": 200, ""after"": 200, ""same_body"": true}",yes
+BA-02,CONTROL,401,401,yes
+BA-03,CONTROL,403,403,yes
+BA-04,CONTROL,"{""member_claiming_owner"": 403, ""real_owner_claiming_viewer"": 200}","{""member_claiming_owner"": 403, ""real_owner_claiming_viewer"": 200}",yes
+BA-05,CONTROL,"{""before_created"": 200, ""before_anon"": 200, ""after_created"": 200, ""after_anon"": 401, ""after_owner"": 200, ""after_other_user"": 404, ""owner_amount"": 500000}","{""before_created"": 200, ""before_anon"": 200, ""after_created"": 200, ""after_anon"": 401, ""after_owner"": 200, ""after_other_user"": 404, ""owner_amount"": 500000}",yes
+BA-06,CONTROL,"{""before"": [200, 409, 200, 1], ""after"": [200, 200, 200, 500000]}","{""before"": [200, 409, 200, 1], ""after"": [200, 200, 200, 500000]}",yes
+BA-07,CONTROL,"[200, 422]","[200, 422]",yes
+SEC-input-string,CONTROL,422,422,yes
+SEC-input-bool,CONTROL,422,422,yes
+SEC-input-float,CONTROL,422,422,yes
+SEC-input-negative,CONTROL,422,422,yes
+SEC-input-zero,CONTROL,422,422,yes
+SEC-idempotent-same-principal,CONTROL,"{""first"": 200, ""retry"": 200, ""different"": 409, ""equal_body"": true}","{""first"": 200, ""retry"": 200, ""different"": 409, ""equal_body"": true}",yes
+SEC-concurrent-same-principal,CONTROL,"[200, 409]","[200, 409]",yes
+SEC-invalid-token,CONTROL,401,401,yes
